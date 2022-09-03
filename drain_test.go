@@ -8,6 +8,10 @@ import (
 	"testing"
 )
 
+func TestCI(t *testing.T) {
+	panic("test")
+}
+
 func TestDrain(t *testing.T) {
 	const chunkSize = 3
 	content := "foo"
