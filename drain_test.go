@@ -8,10 +8,6 @@ import (
 	"testing"
 )
 
-func TestCI(t *testing.T) {
-	panic("test")
-}
-
 func TestDrain(t *testing.T) {
 	const chunkSize = 3
 	content := "foo"
@@ -69,6 +65,7 @@ func TestDrain(t *testing.T) {
 		t.Fatal(err)
 	}
 	fmt.Println("waiting for tracker to become ready")
+	fmt.Println("test")
 	<-tr.Ready
 	fmt.Println("waiting for server to become ready")
 	<-srv.Ready
